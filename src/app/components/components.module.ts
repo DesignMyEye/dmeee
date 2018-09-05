@@ -52,6 +52,6 @@ import { CardsAreasComponent } from './cards-areas/cards-areas.component';
         CommentsAreasComponent,
         CardsAreasComponent
     ],
-    exports:[ ComponentsComponent ]
+    exports: [ComponentsComponent]
 })
 export class ComponentsModule { }

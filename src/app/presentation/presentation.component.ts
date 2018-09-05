@@ -1,3 +1,5 @@
+ 
+import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 import { Component, OnInit, OnDestroy, HostListener, ElementRef } from '@angular/core';
 
 declare const $: any;
@@ -15,9 +17,38 @@ export class PresentationComponent implements OnInit, OnDestroy {
         middle: false,
         right: false
     };
+    closeResult: string;
+
     date: Date = new Date();
 
-     constructor(public el: ElementRef) { }
+     constructor(public el: ElementRef, private modalService: NgbModal) { }
+
+     open(content, type) {
+        if (type === 'sm') {
+            console.log('aici');
+            this.modalService.open(content, { size: 'sm' }).result.then((result) => {
+                this.closeResult = `Closed with: ${result}`;
+            }, (reason) => {
+                this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+            });
+        } else {
+            this.modalService.open(content).result.then((result) => {
+                this.closeResult = `Closed with: ${result}`;
+            }, (reason) => {
+                this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+            });
+        }
+    }
+
+    private getDismissReason(reason: any): string {
+        if (reason === ModalDismissReasons.ESC) {
+            return 'by pressing ESC';
+        } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
+            return 'by clicking on a backdrop';
+        } else {
+            return  `with: ${reason}`;
+        }
+    }
      @HostListener('window:scroll', ['$event'])
      checkScroll() {
         const componentPosition = document.getElementsByClassName('add-animation');

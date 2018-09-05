@@ -31,7 +31,7 @@ export class ComponentsComponent implements OnInit, OnDestroy {
 
     state_icon_primary = true;
 
-    constructor( private renderer : Renderer, config: NgbAccordionConfig) {
+    constructor( private renderer: Renderer, config: NgbAccordionConfig) {
         config.closeOthers = true;
         config.type = 'info';
     }
