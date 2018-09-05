@@ -2,7 +2,7 @@
     <div class="container">
         <div class="navbar-translate">
             <div class="navbar-header">
-                <a class="navbar-brand" [routerLink]="['/presentation']">DME</a>
+                <a class="navbar-brand" [routerLink]="['/presentation']"><i class="fa fa-eye heart default"></i>DME</a>
             </div>
             <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
                 <span class="navbar-toggler-bar"></span>
@@ -39,10 +39,10 @@
                     <a class="nav-link" >Contacto</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/sections']" >Registrarse</a>
+                    <a class="nav-link" [routerLink]="['/examples/register']" >Registrarse</a>
                 </li> 
                 <li class="nav-item">
-                    <a class="btn btn-round btn-magnify" [routerLink]="['/examples/register']">
+                    <a class="btn btn-border btn-warning  btn-success btn-magnify" [routerLink]="['/sections']">
                         <i class="nc-icon nc-cart-simple"></i> Adquirir Servicio
                     </a>
                 </li>
