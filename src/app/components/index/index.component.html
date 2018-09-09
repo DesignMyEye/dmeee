@@ -1,0 +1,10 @@
+ 
+    <div>
+      <div *ngFor="let adunit of adunits">
+           {{ adunit.unit_name }} 
+           {{ adunit.unit_price }} 
+          <a class="btn btn-primary">Edit</a>
+          <button (click)="deleteAdUnit(adunit._id)"  class="btn btn-danger">Delete</button>
+      </div> 
+    </div> 
+ 

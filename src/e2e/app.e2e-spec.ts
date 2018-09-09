@@ -1,4 +1,4 @@
-import }{ Pk2ProAngularPage } from './app.po';
+import { Pk2ProAngularPage } from './app.po';
 
 describe('pk2-pro-angular App', () => {
   let page: Pk2ProAngularPage;

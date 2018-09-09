@@ -14,8 +14,9 @@ import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gal
 })
 
 export class ComponentsComponent implements OnInit, OnDestroy {
-    data : Date = new Date();
+    data: Date = new Date();
 
+    title = 'app';
     page = 4;
     page1 = 5;
 
@@ -141,4 +142,7 @@ export class ComponentsComponent implements OnInit, OnDestroy {
         var navbar = document.getElementsByTagName('nav')[0];
         navbar.classList.remove('navbar-transparent');
     }
+
+    // app.component.ts
+ 
 }

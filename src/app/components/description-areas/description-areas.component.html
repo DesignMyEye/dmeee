@@ -1,86 +1,223 @@
-<div class="container tim-container">
-    <div id="description-areas">
-        <div class="title">
-            <h3>Description Areas</h3>
+
+<div class="cd-section section-white" id="contact-us">
+ 
+          
+        
+                <div class="container">
+                    <div class="col-md-6">
+                        <div class="card card-contact card-raised">
+                            <div class="card-header header-raised header-primary text-center">
+                                <h4 class="card-title">Contacto</h4>
+                            </div>
+                            <form id="contact-form" >
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="info info-horizontal">
+                                                <div class="icon icon-info">
+                                                    <i class="nc-icon nc-badge" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="description">
+                                                    <h5 class="info-title">Nuestros Telefonos</h5>
+                                                    <p> Soporte<br>
+                                                        +54 3537 580214<br>
+                                                        Lun- Vier, 9:00-20:00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="info info-horizontal">
+                                                <div class="icon icon-danger">
+                                                    <i class="nc-icon nc-pin-3" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="description">
+                                                    <h5 class="info-title">Nuestras Oficinas</h5>
+                                                    <p> Sargento Cabral 55<br>
+                                                        5152 - Villa Carlos Paz <br>
+                                                        Cordoba - Argentina
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Nombre y Apellido</label>
+                                                <input type="text" class="form-control" name="nombre" ngModel>                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Email</label>
+                                                <input type="email" class="form-control" name="email" ngModel>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="form-group">
+                                        <label class="control-label">Escriba su mensaje</label>
+                                        <textarea name="message" class="form-control" id="message" rows="6" placeholder="Mensaje"></textarea>
+                                    </div>
+        
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                    <input class="form-check-input" type="checkbox" value="" checked>
+                                                    No Soy un robot!
+                                                    <span class="form-check-sign"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <button type="submit" class="btn btn-rose pull-right">Enviar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div> 
+        
+        
+            <div class="separator"></div>
         </div>
-
-        <div class="row">
-            <div class="col-md-5 col-sm-12">
-                <h4><small>Horizontal Tabs</small></h4>
-
-                <div class="nav-tabs-navigation">
-                    <div class="nav-tabs-wrapper">
-                        <ngb-tabset [justify]="'center'">
-                            <ngb-tab title="Home">
-                                <ng-template ngbTabContent>
-                                    <div class="tab-pane active" id="home" role="tabpanel"><p>Larger, yet dramatically thinner. More powerful, but remarkably power efficient. With a smooth metal surface that seamlessly meets the new Retina HD display.</p></div>
-                                    <div class="tab-pane" id="profile" role="tabpanel"><p>Here is your profile.</p></div>
-                                    <div class="tab-pane" id="messages" role="tabpanel"><p>Here are your messages.</p></div>
-                                </ng-template>
-                            </ngb-tab>
-                            <ngb-tab title="Profile">
-                                <ng-template ngbTabContent>
-                                    <p>Here is your profile.</p>
-                                </ng-template>
-                            </ngb-tab>
-                            <ngb-tab title="Messages">
-                                <ng-template ngbTabContent>
-                                    <p>Here are your messages.</p>
-                                </ng-template>
-                            </ngb-tab>
-                        </ngb-tabset>
+        
+        <footer class="footer footer-black footer-big">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 text-center col-sm-3 col-12 ml-auto mr-auto">
+                        <h4>DME</h4>
+                        <div class="social-area">
+                            <a class="btn btn-just-icon btn-round btn-facebook">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a class="btn btn-just-icon btn-round btn-twitter">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a class="btn btn-just-icon btn-round btn-google">
+                                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-12 ml-auto mr-auto">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3 col-6">
+                                <div class="links">
+                                    <ul class="uppercase-links stacked-links">
+                                        <li>
+                                            <a href="#">
+                                                Home
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Productos
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Servicios
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Soporte
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Asesoramiento Digital
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-6">
+                                <div class="links">
+                                    <ul class="uppercase-links stacked-links">
+                                        <li>
+                                            <a href="#">
+                                                Trabaj� con nosotros
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Contacto
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Acerca de
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-6">
+                                <div class="links">
+                                    <ul class="uppercase-links stacked-links">
+                                        <li>
+                                            <a href="#">
+                                                Blog
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Clientes
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Proyectos
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-6">
+                                <div class="links">
+                                    <ul class="stacked-links">
+                                        <li>
+                                            <h4>13.723<br /> <small>Seguidores</small></h4>
+                                        </li>
+                                        <li>
+                                            <h4>55.234<br /> <small>Descargas</small></h4>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="copyright">
+                            <div class="pull-left">
+                        Powered by DME Team
+                            </div>
+                            <div class="links pull-right">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            Politica
+                                        </a>
+                                    </li>
+                                    |
+                                    <li>
+                                        <a href="#">
+                                            Terminos
+                                        </a>
+                                    </li>
+                                    |
+                                    <li>
+                                        <a href="#">
+                                            Privacidad
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-7 col-sm-12">
-                <h4><small>Vertical Tabs</small></h4>
-                <div class="nav-tabs-navigation">
-                    <div class="nav-tabs-wrapper">
-                        <ngb-tabset [justify]="'center'" [orientation]="'vertical'" class="vertical-tabs">
-                            <ngb-tab title="Info">
-                                <ng-template ngbTabContent>
-                                    <div class="tab-pane active" id="info">
-                                         <p>Larger, yet dramatically thinner. More powerful, but remarkably power efficient. With a smooth metal surface that seamlessly meets the new Retina HD display.</p>
-                                         <p>It’s one continuous form where hardware and software function in perfect unison, creating a new generation of phone that’s better by any measure.</p>
-                                    </div>
-                                </ng-template>
-                            </ngb-tab>
-                            <ngb-tab title="Description">
-                                <ng-template ngbTabContent>
-                                    <div class="tab-pane" id="description">
-                                        <p>The first thing you notice when you hold the phone is how great it feels in your hand. The cover glass curves down around the sides to meet the anodized aluminum enclosure in a remarkable, simplified design. </p>
-                                        <p>There are no distinct edges. No gaps. Just a smooth, seamless bond of metal and glass that feels like one continuous surface.</p>
-                                    </div>
-                                </ng-template>
-                            </ngb-tab>
-                            <ngb-tab title="Concept">
-                                <ng-template ngbTabContent>
-                                    <div class="tab-pane" id="concept">
-                                        <p>It’s one continuous form where hardware and software function in perfect unison, creating a new generation of phone that’s better by any measure.</p>
-                                        <p>Larger, yet dramatically thinner. More powerful, but remarkably power efficient. With a smooth metal surface that seamlessly meets the new Retina HD display. </p>
-                                    </div>
-                                </ng-template>
-                            </ngb-tab>
-                            <ngb-tab title="Support">
-                                <ng-template ngbTabContent>
-                                    <div class="tab-pane" id="support">
-                                        <p>From the seamless transition of glass and metal to the streamlined profile, every detail was carefully considered to enhance your experience. So while its display is larger, the phone feels just right.</p>
-                                        <p>It’s one continuous form where hardware and software function in perfect unison, creating a new generation of phone that’s better by any measure.</p>
-                                    </div>
-                                </ng-template>
-                            </ngb-tab>
-                            <ngb-tab title="Extra">
-                                <ng-template ngbTabContent>
-                                    <div class="tab-pane" id="extra">
-                                        <p>It’s one continuous form where hardware and software function in perfect unison, creating a new generation of phone that’s better by any measure.</p>
-                                        <p>Larger, yet dramatically thinner. More powerful, but remarkably power efficient. With a smooth metal surface that seamlessly meets the new Retina HD display. </p>
-                                    </div>
-                                </ng-template>
-                            </ngb-tab>
-                        </ngb-tabset>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+        </footer>

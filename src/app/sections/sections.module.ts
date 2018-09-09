@@ -20,7 +20,7 @@ import { AgmCoreModule } from '@agm/core';
         CommonModule,
         NgbModule,
         AgmCoreModule.forRoot({
-            apiKey: 'YOUR_KEY_HERE'
+            apiKey: 'AIzaSyCGQHmu90tR2SHtsW7QI-LFTrmYTEpV_bU'
         }),
         RouterModule
     ],

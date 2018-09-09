@@ -4,7 +4,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
-
+ 
+import { HttpClientModule } from '@angular/common/http';
 import { PresentationComponent } from './presentation.component';
 
 @NgModule({
@@ -16,7 +17,7 @@ import { PresentationComponent } from './presentation.component';
         NgbModule
     ],
     declarations: [ PresentationComponent ],
-    exports:[ PresentationComponent ],
+    exports: [PresentationComponent],
     providers: []
 })
 export class PresentationModule { }

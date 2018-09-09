@@ -1,15 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown/angular2-multiselect-dropdown';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TagInputModule } from 'ngx-chips';
 import { NouisliderModule } from 'ng2-nouislider';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { JWBootstrapSwitchModule } from 'jw-bootstrap-switch-ng2';
-import { AgmCoreModule } from '@agm/core';
-
-import { ImageUploadModule } from '../shared/image-upload/image-upload.module';
-
+import { AgmCoreModule } from '@agm/core';  
+import { ImageUploadModule } from '../shared/image-upload/image-upload.module'; 
 import { ExamplesComponent } from './examples.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { AddproductComponent } from './addproduct/addproduct.component';
@@ -29,7 +27,11 @@ import { TwitterComponent } from './twitter/twitter.component';
 import { Page404Component } from './page404/page404.component';
 import { Page422Component } from './page422/page422.component';
 import { Page500Component } from './page500/page500.component';
+import { CreateComponent } from './create/create.component';
+import { EditComponent } from './edit/edit.component';
+import { IndexComponent } from './index/index.component';
 
+import { RouterModule } from '@angular/router';
 @NgModule({
     imports: [
         CommonModule,
@@ -42,7 +44,9 @@ import { Page500Component } from './page500/page500.component';
         AgmCoreModule.forRoot({
             apiKey: 'AIzaSyBr-tgUtpm8cyjYVQDrjs8YpZH7zBNWPuY'
         }),
-        ImageUploadModule
+        ImageUploadModule,
+        ReactiveFormsModule,
+        RouterModule
     ],
     declarations: [
         ExamplesComponent,
@@ -63,7 +67,10 @@ import { Page500Component } from './page500/page500.component';
         TwitterComponent,
         Page404Component,
         Page422Component,
-        Page500Component
+        Page500Component,
+        CreateComponent,
+        EditComponent,
+        IndexComponent
     ]
 })
-export class ExamplesModule { }
+export class ExamplesModule { } 

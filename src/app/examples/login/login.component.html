@@ -1,28 +1,56 @@
 <div class="wrapper">
-    <div class="page-header" style="background-image: url('./assets/img/sections/bruno-abatti.jpg');">
+    <div class="page-header" style="background-image: url('./assets/img/w2.jpg');">
         <div class="filter"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-6 ml-auto mr-auto">
-                    <div class="card card-register">
-                        <h3 class="card-title">Welcome</h3>
+                    <div class="card card-register" style="background-color:rgb(34, 34, 138) ; opacity: 0.7 ; color:black ; font-weight: 500">
+                            <h1 class="card-title" style="color:white ; font-weight: bold">DME</h1>
+                            <h3 class="card-title" style="color:white ; font-weight: 700">Bienvenido</h3>
                         <form class="register-form">
                             <label>Email</label>
                             <input type="email" class="form-control no-border" placeholder="Email">
 
                             <label>Password</label>
                             <input type="password" class="form-control no-border" placeholder="Password">
-                            <button class="btn btn-danger btn-block btn-round">Login</button>
+                            <button type="button" class="btn btn-facebook btn-default" (click)="open(small, 'sm')">
+                                    Enviar
+                                </button>
+                                <ng-template #small let-c="close" let-d="dismiss">
+                                    <div class="no-title modal-header no-border-header">
+                                        <!-- <h4 class="modal-title">Modal title</h4> -->
+                                        <button type="button" class="close" (click)="d('Cross click')">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <h5>Parece que algo no salió como se esperaba, el sistema volverá pronto
+                                            En este momento estamos trabajando en unas actualizaciones para brindarle
+                                            un mejor servicio. Por favor intente nuevamente mas tarde. </h5>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <div class="left-side">
+                                            <button type="button" class="btn btn-default btn-link" (click)="c('Close click')">
+                                                Salir
+                                            </button>
+                                        </div>
+                                        <div class="divider"></div>
+                                        <div class="right-side">
+                                            <button type="button" class="btn btn-facebook btn-link">Si</button>
+                                        </div>
+                                    </div>
+                                </ng-template>
+
                         </form>
                         <div class="forgot">
-                            <a href="#paper-kit" class="btn btn-link btn-danger">Forgot password?</a>
+                            <a href="#" class="btn btn-link btn-facebook">Olvidó su password?</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="demo-footer text-center">
-                <h6>&copy; {{data | date: 'yyyy'}}, made with <i class="fa fa-heart heart"></i> by Creative Tim</h6>
+            <div class="demo-footer text-center" style="color: black">
+                <h6>&copy; {{data | date: 'yyyy'}}, Powered <i class="fa fa-heart heart"></i> by DME Team </h6>
             </div>
         </div>
-    </div>
-</div>
+    </div> 
+
