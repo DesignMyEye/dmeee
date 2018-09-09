@@ -25,7 +25,7 @@ export class CreateComponent implements OnInit {
 
   addAdUnit(unit_name, unit_price) {
     this.adunitservice.addAdUnit(unit_name, unit_price);
-    this.router.navigate(['/presentation']);
+    this.router.navigate(['/']);
 }
   ngOnInit() {
   }

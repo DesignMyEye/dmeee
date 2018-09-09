@@ -62,16 +62,16 @@
                             <p>Cree su cuenta gratis y segura</p>
                         </div>
                         <div class="modal-body">
-                            <button  [routerLink]="['/examples/login']"  class="btn btn-block btn-round btn-success">Ya tengo cuenta</button>
+                            <button  [routerLink]="['/examples/login']"  (click)="d('Cross click')" class="btn btn-block btn-round btn-success">Ya tengo cuenta</button>
                             <button class="btn btn-block btn-round btn-facebook">Conectarse con Facebook</button>
                             <button class="btn btn-block btn-round btn-twitter">Conectarse con Twitter</button>
-                            <button [routerLink]="['/examples/create']" type="button" class="btn btn-info btn-round btn-block btn-default"> Ingresar con mi E-mail</button>
+                            <button [routerLink]="['/examples/create']"  (click)="d('Cross click')" type="button" class="btn btn-info btn-round btn-block btn-default"> Ingresar con mi E-mail</button>
                         </div>
                         <div class="modal-footer no-border-footer"><br><br><br></div>
                     </ng-template> 
                 </li>  
                 <li class="nav-item">
-                    <a class="btn btn-success btn-border btn-magnify" style="color:green !important">
+                    <a class="btn btn-success btn-border btn-magnify" style="color:blue !important">
                         <i [routerLink]="['/examples/login']"  class="nc-icon nc-cart-simple"></i> Adquirir servicio
                     </a>
                 </li>
