@@ -1,0 +1,18 @@
+<table class="table table-hover" style="margin-top:9%"> 
+  <thead>
+  <tr>
+      <td>Nombre</td>
+      <td>PIN</td>
+      <td colspan="2">Acciones</td>
+  </tr>
+  </thead>
+
+  <tbody>
+      <tr *ngFor="let adunit of adunits">
+          <td>{{ adunit.unit_name }}</td>
+          <td>{{ adunit.unit_price }}</td>
+          <td><div [routerLink]="['/edit', adunit._id]" class="btn btn-primary">Editar</div></td>
+          <td><button (click)="deleteAdUnit(adunit._id)"  class="btn btn-danger">Borrar</button></td>
+      </tr>
+  </tbody>
+</table>

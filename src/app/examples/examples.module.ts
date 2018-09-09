@@ -6,7 +6,7 @@ import { TagInputModule } from 'ngx-chips';
 import { NouisliderModule } from 'ng2-nouislider';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { JWBootstrapSwitchModule } from 'jw-bootstrap-switch-ng2';
-import { AgmCoreModule } from '@agm/core';  
+import { AgmCoreModule } from '@agm/core';
 import { ImageUploadModule } from '../shared/image-upload/image-upload.module'; 
 import { ExamplesComponent } from './examples.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
@@ -73,4 +73,4 @@ import { RouterModule } from '@angular/router';
         IndexComponent
     ]
 })
-export class ExamplesModule { } 
+export class ExamplesModule { }

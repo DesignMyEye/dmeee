@@ -25,6 +25,10 @@ import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.compo
 import { EditComponent } from './examples/edit/edit.component';
 import { IndexComponent } from './examples/index/index.component';
 import { CreateComponent } from './examples/create/create.component';
+import { ExamplesComponent } from './examples/examples.component';
+import { LandingComponent } from './examples/landing/landing.component';
+import { Page422Component } from './examples/page422/page422.component';
+import { ProfileComponent } from './examples/profile/profile.component';
 
 
 const routes: Routes =[
@@ -32,9 +36,10 @@ const routes: Routes =[
     { path: 'components',           component: ComponentsComponent },
     { path: 'sections',             component: SectionsComponent },
     { path: 'nucleoicons',          component: NucleoiconsComponent } ,
+    { path: 'examples',               component: ExamplesComponent },
     { path: 'examples/index',       component: IndexComponent },
     { path: 'examples/create',       component: CreateComponent },
-    { path: 'examples/edit:id',     component: EditComponent },,
+    { path: 'examples/edit:id',     component: EditComponent },
     { path: 'examples/aboutus',     component: AboutusComponent },
     { path: 'examples/addproduct',  component: AddproductComponent },
     { path: 'examples/blogpost',    component: BlogpostComponent },
@@ -47,6 +52,9 @@ const routes: Routes =[
     { path: 'examples/register',    component: RegisterComponent },
     { path: 'examples/search',      component: SearchComponent },
     { path: 'examples/settings',    component: SettingsComponent },
+    { path: 'examples/profile',     component: ProfileComponent },
+    { path: 'examples/page422',     component: Page422Component },
+    { path: 'examples/landing',     component: LandingComponent },
     { path: 'examples/twitter',     component: TwitterComponent },
     { path: 'examples/page404',     component: Page404Component },
     { path: 'examples/page500',     component: Page500Component },

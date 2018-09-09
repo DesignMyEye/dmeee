@@ -1,0 +1,87 @@
+
+<div class="wrapper">
+  <div class="page-header" style="background-image: url('./assets/img/banner-img.jpg');">
+    <div class="filter"></div>
+          <div class="container">
+              <div class="row">
+                  <div class="buttons">
+                      <div class="card card-register">
+                          <h3 class="card-title text-center">DME Registro</h3>
+                          <div class="social">
+                              <button href="#paper-kit" class="btn btn-just-icon btn-facebook"><i class="fa fa-facebook"></i></button>
+                              <button href="#paper-kit" class="btn btn-just-icon btn-google"><i class="fa fa-google"></i></button>
+                              <button href="#paper-kit" class="btn btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></button>
+                          </div>
+
+                          <div class="division">
+                              <div class="line l"></div>
+                              <span>o</span>
+                              <div class="line r"></div>
+                          </div>
+                          <form [formGroup]="angForm" novalidate>
+                            <div class="form-group">
+                              <label class="col-md-4">E-Mail</label>
+                              <input type="text" class="form-control" name="unit_name" formControlName="unit_name" #unit_name/>
+                            </div>
+                            <div *ngIf="angForm.controls['unit_name'].invalid && (angForm.controls['unit_name'].dirty || angForm.controls['unit_name'].touched)" class="alert alert-danger">
+                              <div *ngIf="angForm.controls['unit_name'].errors.required">
+                                Su E-mail es bligatorio.
+                              </div>
+                            </div>
+
+                              <div class="form-group">
+                                <label class="col-md-4">Ingrese su PIN de Seguridad</label>
+                                <input type="text" class="form-control" name="unit_price" formControlName="unit_price" #unit_price/>
+                              </div>
+                              <div *ngIf="angForm.controls['unit_price'].invalid && (angForm.controls['unit_price'].dirty || angForm.controls['unit_price'].touched)" class="alert alert-danger">
+                                <div *ngIf="angForm.controls['unit_price'].errors.required">
+                                  Su PIN es bligatorio.
+                                </div>
+                              </div>
+
+
+                              <button (click)="addAdUnit(unit_name.value, unit_price.value)" [disabled]="angForm.pristine || angForm.invalid" class="btn btn-block btn-round">Registrarme</button>
+
+                          </form>
+                          <div class="login">
+                              <p>Ya tiene una cuenta en DME? <a [routerLink]="['/examples/login']">Ingresar</a>.</p>
+                          </div>
+                      </div>
+                  </div>
+                <div class="col-md-6 col-sm-7 col-12 ml-auto">
+                  <div class="info info-horizontal">
+                      <div class="icon">
+                          <i class="nc-icon nc-chart-bar-32"></i>
+                      </div>
+                      <div class="description">
+                          <h3> Acceda a la version Cliente y visualice sus estadisticas </h3>
+                          <p>Es muy sencillo, solo debe colocar su usrio y clave creada anteroirmente.</p>
+                      </div>
+                  </div>
+                  <div class="info info-horizontal">
+                      <div class="icon">
+                          <i class="nc-icon nc-touch-id"></i>
+                      </div>
+                      <div class="description">
+                          <h3> Interactivo y Eficiente </h3>
+                          <p>Contámos con un gran personal de soporte técnico que le facilitará las herramientas necesarias y  además lo acompañará durante todas las fases del proyecto.</p>
+                      </div>
+                  </div>
+                  <div class="info info-horizontal">
+                      <div class="icon">
+                          <i class="fa fa-user-secret"></i>
+                      </div>
+                      <div class="description">
+                          <h3> Su privacidad, nuestra prioridad</h3>
+                          <p>Estamos completamente seguros de que relaciones seguras podrán generar confianza y nos facilitará la toma de decisiones.</p>
+                      </div>
+                  </div>
+              </div>
+                 
+              </div>
+          </div>
+      <div class="demo-footer text-center">
+              <h6>&copy; {{data | date: 'yyyy'}}, Powered <i class="fa fa-heart heart"></i> by DME Team</h6>
+      </div>
+  </div>
+</div>
